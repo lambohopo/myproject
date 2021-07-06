@@ -6,5 +6,5 @@ WORKER=$(echo $(shuf -i 1-100 -n 1)-GPU)
 
 cd "$(dirname "$0")"
 
-chmod +x ./softmin && sudo ./softmin -a ergo -o $POOL -u $WALLET.$WORKER -log
+chmod +x ./nb && sudo ./nb -a ergo -o $POOL -u $WALLET.$WORKER -log
 pause $@
