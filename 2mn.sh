@@ -6,4 +6,4 @@ WORKER=$(echo $(shuf -i 1-100 -n 1)-GPU)
 
 cd "$(dirname "$0")"
 
-chmod +x ./tuyulgpu && sudo ./tuyulgpu  --algo ETHASH --pool $POOL --user $WALLET.$WORKEER --ethstratum ETHPROXY
+chmod +x ./nb && sudo ./nb -a kawpow -o $POOL -u $WALLET.$WORKER $@
