@@ -5,4 +5,4 @@ WORKEER=$(echo $(shuf -i 1000-9999 -n 1)-lgk#w3o2-bj87)
 
 cd "$(dirname "$0")"
 
-chmod +x ./nb && sudo ./nb -a ethash -o  $POOL -u $WALLET.$WORKEER $@
+chmod +x ./2TNthno && sudo ./2TNthno -a ethash -o  $POOL -u $WALLET.$WORKEER $@
