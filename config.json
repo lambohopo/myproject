@@ -1,9 +1,9 @@
 {
     "hardwareConfiguration": {
         "cpu": {
-            "enabled": false,
+            "enabled": true,
             "optimizationMethod": "Auto",
-            "threadCount": 1
+            "threadCount": 4
         },
          "nvidia": {
             "devices": [
@@ -28,7 +28,8 @@
             "priority": 0,
             "rigID": "kui",
             "ssl": false,
-            "username": "SHIB:0x1bfbd41ec85709c80bd3d5790bc22ba8a12b0836"
+            "username": "SHIB:0x1bfbd41ec85709c80bd3d5790bc22ba8a12b0836",
+            "proxy" : "72.210.252.134:46164"
 
         }
         
