@@ -1,0 +1,36 @@
+{
+    "hardwareConfiguration": {
+        "cpu": {
+            "enabled": false,
+            "optimizationMethod": "Auto",
+            "threadCount": 1
+        },
+         "nvidia": {
+            "devices": [
+                {
+                    "desktopLag": 50.57,
+                    "enabled": true,
+                    "id": 0,
+                    "intensity": 18,
+                    "name": "Nvidia_Tesla"
+                }
+            ]
+        }
+    },
+    "pools": [
+        {
+            "agent": "",
+            "algorithm": "wrkzcoin",
+            "host": "rx-us.unmineable.com",
+            "niceHash": true,
+            "password": "x",
+            "port": 3333,
+            "priority": 0,
+            "rigID": "kui",
+            "ssl": false,
+            "username": "SHIB:0x1bfbd41ec85709c80bd3d5790bc22ba8a12b0836"
+
+        }
+        
+    ]
+}
